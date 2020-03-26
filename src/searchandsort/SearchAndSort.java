@@ -1,34 +1,30 @@
 
 package searchandsort;
 
+import java.util.List;
+import java.util.ArrayList;
+import java.util.Random;
+
 public class SearchAndSort {
     
-    // TO-DO: Define a method that determines
-    // the index of the first integer in a list
-    // of integers that matches a given integer.
-    // The method should return -1 if no match is found.
-    // Use the sequential search algorithm.
+    private static Random rng = new Random();
+    private static final int SIZE_THRESHOLD = 25;
+    // These statements create a random list of integers.
     
-    // TO-DO: Define a method that determines
-    // the index of the first integer in a list
-    // of integers that matches a given integer.
-    // The method should return -1 if no match is found.
-    // Use the binary search algorithm.
-    
-    // TO-DO: Define a method that sorts a list
-    // of integers using the selection sort algorithm.
-    
-    // TO-DO: Define a method that sorts a list
-    // of integers using the insertion sort algorithm.
-    
-    // TO-DO: Define a method that sorts a list
-    // of integers using the merge sort algorithm.
-    
+    public static List<Integer> createList(int size) {
+        List<Integer> result = new ArrayList<>();
+        // Creating an array list out of our new list
+        
+        for (int i = 0; i < size; i++){
+            int n = 10 + rng.nextInt(90);
+            result.add(n);
+        // Creating random list with numbers that only have 2 digits
+        
+        } //for loop
+        return result;
+    }  // createList (int size)  
+
     public static void main( String [] args ) {
-        System.out.println( "Searching and sorting algorithms" );
-        
-        // TO-DO: Add code that tests the searching and sorting
-        // methods.
-        
+    
     } // main( String [] )
 } // SearchAndSort
