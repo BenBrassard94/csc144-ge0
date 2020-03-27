@@ -24,6 +24,25 @@ public class SearchAndSort {
         return result;
     }  // createList (int size)  
 
+    public static void printList(List<Integer> newList) {
+        if (newList.size() < SIZE_THRESHOLD){
+            for (int n : newList) {
+                System.out.printf("%4d", n);
+                // Printing list in a row with 4 spaces apart
+                
+            } // for loop
+            System.out.println();
+             
+        } // if
+        else {
+            for (int n : newList){
+                System.out.printf("%4d", n);
+                // Printing list in a column with 4 spaces apart
+                
+            } // for loop
+        } // else
+    } // printList
+    
     public static void main( String [] args ) {
     
     } // main( String [] )
