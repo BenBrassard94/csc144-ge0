@@ -12,6 +12,8 @@ public class SearchAndSort {
     // These statements create a random list of integers.
     
     public static List<Integer> createList(int size) {
+        // Borrowed from Leon Tabak
+        
         List<Integer> result = new ArrayList<>();
         // Creating an array list out of our new list
         
@@ -25,6 +27,8 @@ public class SearchAndSort {
     }  // createList (int size)  
 
     public static void printList(List<Integer> newList) {
+    // Borrowed from Leon Tabak
+    
         if (newList.size() < SIZE_THRESHOLD){
             for (int n : newList) {
                 System.out.printf("%4d", n);
@@ -43,7 +47,26 @@ public class SearchAndSort {
         } // else
     } // printList
     
+    /* Find a method that determines the index
+    *  of the first integer in a list of integers
+    *  that matches a give integer. If there is
+    *  no match. should return -1. Use the sequential
+    *  search algorithm.
+    *
+    * @param linearSearh( List<Integer>)
+    * @result result of linearSearch
+    * 
+    * @author Ben Brassard
+    * @version 27 March 2020
+    * 
+    */
+    
+    
+    
     public static void main( String [] args ) {
     
     } // main( String [] )
+    
+    
 } // SearchAndSort
+
