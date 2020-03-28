@@ -158,13 +158,23 @@ public class SearchAndSort {
     */
     
     public static void selectionSort(List<Integer> newList){
-       
+       for (int i = 0; i < newList.size(); i++){
+           int j = findMinPoint(newList, i);
+           swap(newList, i, j);
+       } // for loop
 
             
      
         
     } // selectionSort(List<Integer> newList)
     public static void main(String[] args) {
+        System.out.println("Selection Sort");
+        List<Integer> data = createList(10);
+        printList(data);
+        System.out.println(" **** ");
+        selectionSort(data);
+        printList(data);
+        
 
     } // main( String [] )
 
