@@ -7,7 +7,7 @@ import java.util.Random;
 public class SearchAndSort {
 
     private static Random rng = new Random();
-    private static final int SIZE_THRESHOLD = 25;
+    private static final int SIZE_THRESHOLD = 11;
     // These statements create a random list of integers.
 
     public static List<Integer> createList(int size) {
@@ -83,7 +83,7 @@ public class SearchAndSort {
     * @param Using List<Integer> newList (List)
     * @result A list that has been search through with binary search
     *
-     */
+    */
     public static int binarySearch(List<Integer> newList, int targetVal) {
         // Returns -1 if there is no match
         int result = -1;
@@ -126,7 +126,44 @@ public class SearchAndSort {
         } // while loop
         return result;
     } // binarySearch(List<Integer> newList)
+    
+    // Makes a swap method to make the sort methods more clean
+    public static void swap(List<Integer> newList, int i, int j) {
+        // Swaps two integers
+        int tempNum = newList.get(i);
+        newList.set(i, newList.get(j));
+        newList.set(j, tempNum);
+        
+    } // swap(List<Integer> newList
+    
+    // Find the minimum value in a list and makes code for sorts more clean
+    public static int findMinPoint(List<Integer> newList, int start){
+        // Creating variable that changes to different min points
+        int currentPoint = start;
+        // Finding lowest possible integer then setting it to the start
+        for (int i = start + 1; i < newList.size(); i++){
+            if (newList.get(i) < newList.get(currentPoint)){
+                currentPoint = i;
+            } // if
+        } // for loop
+        return currentPoint;
+    } // findMinPoint(List<Integer> newList
+        
+    /* Find a method that sorts a list using selection
+    *  sort. Should put all integers in the list in order
+    *  from smallest to largest.
+    *
+    *  @param newList Sorted list (List)
+    *  @return newList ending list, should be sorted
+    */
+    
+    public static void selectionSort(List<Integer> newList){
+       
 
+            
+     
+        
+    } // selectionSort(List<Integer> newList)
     public static void main(String[] args) {
 
     } // main( String [] )
