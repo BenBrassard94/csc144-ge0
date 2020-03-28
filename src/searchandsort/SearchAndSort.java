@@ -50,7 +50,7 @@ public class SearchAndSort {
     /* Find a method that determines the index
     *  of the first integer in a list of integers
     *  that matches a give integer. If there is
-    *  no match. should return -1. Use the sequential
+    *  no match, should return -1. Use the sequential
     *  search algorithm.
     *
     * @param linearSearh( List<Integer>)
@@ -61,6 +61,31 @@ public class SearchAndSort {
     * 
     */
     
+    public static int linearSearch(List<Integer> newList, int targetVal) {
+        // Returns -1 if there is no match
+        int result = -1;
+        // Setting initial index
+        int index = 0;
+        
+        // Only searches when these parameters are met
+        // result < 0 stops while loop from being infinite
+        while (index < newList.size() && result < 0) {
+            if (targetVal == newList.get(index)){
+                result = index;
+                
+            } // if
+        } // while loop
+        return result;
+    } // linearSearch (List<Integer> newList)
+    
+    /* Repeat the same instructions as linearSearch
+    * but this time, use the binarySearch to find the 
+    * index of the first integer of the given integer
+    *
+    * @param Using List<Integer> newList (List)
+    * @result A list that has been search through with binary search
+    *
+    */
     
     
     public static void main( String [] args ) {
