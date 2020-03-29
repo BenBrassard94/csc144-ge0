@@ -162,17 +162,51 @@ public class SearchAndSort {
            int j = findMinPoint(newList, i);
            swap(newList, i, j);
        } // for loop
-
-            
-     
-        
     } // selectionSort(List<Integer> newList)
+    
+    // Helps compress the insertionSort method
+    public static void insert(List<Integer> newList, int nextNum){
+        int i = nextNum;
+        while (i > 0 && newList.get(i) < newList.get(i - 1)){
+            swap(newList, i, i - 1);
+            i = i - 1;
+            
+        } // while loop
+        
+    } // insert(List<Integer> newList)
+    
+    /* Find a method that sorts a list of integers that uses the
+     * insertion sort method
+     *
+     * @param newList
+     * @param next
+     * @return swap values in list and sorts it
+     */
+    
+    public static void insertionSort(List<Integer> newList){
+        for (int i = 1; i < newList.size(); i++){
+            insert(newList, i);
+            
+        } // for loop
+    } // insertionSort(List<Integer>)
+   
+            
+            
     public static void main(String[] args) {
         System.out.println("Selection Sort");
         List<Integer> data = createList(10);
         printList(data);
         System.out.println(" **** ");
         selectionSort(data);
+        printList(data);
+        
+        System.out.println(" **** ");
+        
+        System.out.println("Insertion Sort");
+        data = createList(10);
+        printList(data);
+        System.out.println(" **** ");
+        insertionSort(data);
         printList(data);
         
 
