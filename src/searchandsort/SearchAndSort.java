@@ -4,6 +4,10 @@ import java.util.List;
 import java.util.ArrayList;
 import java.util.Random;
 
+/*
+* @author Ben Brassard
+* @version 
+*/
 public class SearchAndSort {
 
     private static Random rng = new Random();
@@ -56,9 +60,9 @@ public class SearchAndSort {
     * @result result of linearSearch
     * 
     * @author Ben Brassard
-    * @version 27 March 2020
+    * @version 29 March 2020
     * 
-     */
+    */
     public static int linearSearch(List<Integer> newList, int targetVal) {
         // Returns -1 if there is no match
         int result = -1;
@@ -81,9 +85,9 @@ public class SearchAndSort {
     * index of the first integer of the given integer
     *
     * @param Using List<Integer> newList (List)
-    * @result A list that has been search through with binary search
+    * @result A list that has been searched through with binary search
     *
-     */
+    */
     public static int binarySearch(List<Integer> newList, int targetVal) {
         // Returns -1 if there is no match
         int result = -1;
@@ -153,7 +157,8 @@ public class SearchAndSort {
     *
     *  @param newList Sorted list (List)
     *  @return newList ending list, should be sorted
-     */
+    */
+    
     public static void selectionSort(List<Integer> newList) {
         for (int i = 0; i < newList.size(); i++) {
             int j = findMinPoint(newList, i);
@@ -176,7 +181,7 @@ public class SearchAndSort {
      * insertion sort method
      *
      * @param newList
-     * @param next
+     * @param nextNum
      * @return swap values in list and sorts it
      */
     public static void insertionSort(List<Integer> newList) {
