@@ -282,5 +282,19 @@ public class SearchAndSort {
 *  only have experience in. One of the easiest difference that are seen are
 *  that in Python, one can code the same thing in Java but with much less lines.
 *  Java is one of the foundation coding languages to leanr and once one learns it,
-*  most of the other coding languages will become more clear
+*  most of the other coding languages will become more clear.
+*
+*  When creating a random list of integers, this is another difference between Java
+*  and Python. In Pythonn, it's pretty easy to create a list of random numbers.
+*  But in Java, you have to create and object of the class Random, which is implemented
+*  in the system itself.
+*
+*  One other difference to get used to is to make sure you have brackets, parantheses,
+*  and semi-colons at the end of every spot they should be. If these are forgotten,
+*  everything will seem to not work, even if it is spot on correct.
+*
+*  Overall, everyone should learn how to create different classes and create random list
+*  by looking at this exercise. You can learn how to grab elements of list with different
+*  commands and find the index of certain spots in the list. There are many things here
+*  that one can take out and try on their own. Have fun!
 */
